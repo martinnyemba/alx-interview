@@ -2,8 +2,9 @@
 """
 N-Queens Challenge Solver
 
-This script solves the N-Queens problem, where the objective is to place N queens
-on an N x N chessboard in such a way that no two queens can attack each other.
+This script solves the N-Queens problem, where the objective is to place
+N queens on an N x N chessboard in such a way that no two queens
+can attack each other.
 
 Usage:
     python3 nqueens.py N
@@ -25,12 +26,12 @@ import sys
 def is_safe(placed_queens, row, col):
     """
     Check if a queen can be safely placed at the given row and column.
-    
+
     Args:
-        placed_queens (list): List of coordinates where queens are already placed.
+        placed_queens (list): List of coord where queens are already placed.
         row (int): The current row to check.
         col (int): The current column to check.
-    
+
     Returns:
         bool: True if it is safe to place the queen, False otherwise.
     """
@@ -44,12 +45,12 @@ def is_safe(placed_queens, row, col):
 def solve_nqueens(n):
     """
     Solve the N-Queens problem and return all possible solutions.
-    
+
     Args:
         n (int): The size of the chessboard (N x N).
-    
+
     Returns:
-        list: A list of solutions, where each solution is represented as a list 
+        list: A list of solutions, where each solution is represented as a list
               of queen coordinates in the form [row, column].
     """
     solutions = []
